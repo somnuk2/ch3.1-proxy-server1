@@ -3,17 +3,11 @@
     <div class="container q-mx-auto" style="max-width: 800px">
       <div class="row items-center q-mb-xl">
         <div class="col">
-          <div class="text-h3 text-weight-bold text-primary">My Tasks</div>
-          <div class="text-subtitle1 text-grey-7">Fullstack Lab: Express + Prisma + Supabase</div>
+          <div class="text-h3 text-weight-bold text-primary">My Tasks in 2026</div>
+          <div class="text-subtitle1 text-grey-7">Fullstack Lab: Express + Prisma + Supabase with CI/CD</div>
         </div>
         <div class="col-auto">
-          <q-btn
-            round
-            color="primary"
-            icon="refresh"
-            :loading="loading"
-            @click="fetchTasks"
-          >
+          <q-btn round color="primary" icon="refresh" :loading="loading" @click="fetchTasks">
             <q-tooltip>Reload Tasks</q-tooltip>
           </q-btn>
         </div>
@@ -76,9 +70,10 @@
   transition: all 0.3s ease;
   border-radius: 12px;
 }
+
 .task-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border-color: var(--q-primary);
 }
 </style>
